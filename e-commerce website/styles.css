@@ -1,79 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-nav{
-    height: 80px;
-    display: flex;
-    margin-bottom: 160px; ;
+html {
+  scroll-behavior: smooth;
 }
 
-img{
-    width: 100%;
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-.nav__container{
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+nav {
+  height: 80px;
+  display: flex;
 }
 
-.purple{
-    color: #7342d6;
+img {
+  width: 100%;
+  height: 100%;
+  max-height: 50vh;     
+  padding: 20px;
 }
 
-.logo{
-    width: 160px;
-    height: 160px;
+p {
+  line-height: 1.5;
 }
 
-ul{
-    display: flex;
+a {
+  text-decoration: none;
 }
 
-li{
-    list-style-type: none;
+a:hover {
+  text-decoration: underline;
 }
 
-.nav__link{
-    margin-left: 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #7342d6;
-    font-weight: bold;
-    padding: 8px;
+
+
+ul {
+  display: flex;
 }
 
-.nav__link:hover{
-    text-decoration: underline;
+li {
+  list-style-type: none;
 }
 
-.nav__link--primary{
-    border: 2px solid #7342d6;
-    border-radius: 4px;
+h1 {
+  font-size: 56px;
+  color: #7342d6;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
-.nav__link--primary:hover{
-    text-decoration: none;
+h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
-#landing{
-    background-color: rgba(115, 66, 214, 0.1);
+button {
+  cursor: pointer;
 }
 
-header{
+button:active {
+  transform: translateY(1px);
+}
+
+.btn {
+  background-color: #7342d6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.purple {
+  color: #7342d6;
+}
+
+.logo {
+  width: 160px;
+}
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__link {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #7342d6;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link--primary {
+  border: 2px solid #7342d6;
+  border-radius: 4px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: #7342d6;
+  display: none;
+}
+
+/* 
+
+LANDING
+
+*/
+
+#landing {
+    background-color: rgba(115, 66, 214, 0.1)
+  }
+  
+  header {
     height: calc(100vh - 80px);
-}
-
-.header__container{
+  }
+  
+  .header__container {
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
@@ -81,40 +149,47 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.header__description{
+    padding-top: 24px;
+  }
+  
+  .header__description {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
+  
+  .header__img--wrapper {
+    padding: 20px;
+  
+    /* Added this after the tutorial to 
+    show it over the wave on larger screens */
+    z-index: 50;
+  }
+  
+  .container {
+    padding: 56px 0;
+  }
+  
+  .row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .no-cursor {
+    cursor: not-allowed;
+  }
 
-h1{
-    font-size: 56px;
-    color: #7342d6;
-    margin-bottom: 24px;
-    text-align: center;
-}
+  /* HIGHLIGHTS */
 
-h2{
-    font-size: 32px;
-    margin-bottom: 32px;
-    text-align: center;
-}
+  .highlight__wrapper{
+    display: flex;
+  }
 
-button{
-    cursor: pointer;
-}
-
-button:active{
-    transform: translateY(1px);
-}
-
-.btn{
-    background-color: #7342d6;
-    color: white;
-    padding: 12px 24px;
-    font-size: 20px;
-    border-radius: 4px;
-    border: none;
-}
+  
